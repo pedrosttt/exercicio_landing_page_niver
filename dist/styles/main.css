@@ -1,0 +1,194 @@
+.hero {
+  padding-top: 64px;
+  padding-bottom: 100px;
+  background-image: url(/fundo-festa.87799ba8.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.hero__title {
+  font-family: "Pacifico", cursive;
+  font-size: 50px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.hero .container {
+  position: relative;
+}
+.hero::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  content: "";
+  opacity: 0.3;
+}
+.hero__text {
+  font-family: "Pacifico", cursive;
+  margin-top: 64px;
+  margin-bottom: 64px;
+  font-size: 40px;
+  line-height: 56px;
+  font-weight: 800;
+  text-align: center;
+  color: #000;
+}
+.hero__logo {
+  margin: 0 auto;
+  height: 80px;
+  display: block;
+}
+@media (max-width: 640px) {
+  .hero {
+    padding: 40px 0;
+  }
+  .hero__logo {
+    height: 40px;
+  }
+  .hero__text {
+    font-size: 22px;
+    line-height: 24px;
+    margin: 24px 0;
+  }
+}
+
+.infos-bar {
+  padding: 16px 24px;
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+}
+.infos-bar__infos {
+  display: flex;
+  gap: 40px;
+}
+.infos-bar__infos__item {
+  font-size: 14px;
+  color: #fff;
+}
+.infos-bar__infos__item b {
+  color: #fff;
+  font-size: 18px;
+  display: block;
+}
+@media (max-width: 640px) {
+  .infos-bar {
+    display: block;
+  }
+  .infos-bar__infos {
+    display: block;
+  }
+  .infos-bar__infos__item {
+    margin-bottom: 24px;
+  }
+}
+@media (max-width: 1024px) {
+  .infos-bar__infos {
+    gap: 16px;
+  }
+}
+
+.button {
+  padding: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  white-space: nowrap;
+}
+.button--primary {
+  color: #000;
+  background-color: #ffcc00;
+}
+@media (max-width: 640px) {
+  .button {
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+}
+@media (max-width: 1024px) {
+  .button {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.event {
+  padding: 80px 0;
+}
+.event--tematica {
+  background-image: linear-gradient(#87CEEB, #1E90FF);
+}
+.event--musica {
+  background-image: linear-gradient(#1E90FF, #228B22);
+}
+.event--comida-bebida {
+  background-image: linear-gradient(#228B22, #ADFF2F);
+}
+.event--surpresas {
+  background-image: linear-gradient(#ADFF2F, #87CEEB);
+}
+.event--image-left .container {
+  flex-direction: row-reverse;
+}
+.event .container {
+  display: flex;
+  gap: 40px;
+}
+.event__image {
+  max-width: 360px;
+}
+.event__details__title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #000;
+}
+.event__details__description {
+  font-size: 16px;
+  line-height: 22px;
+  color: #000;
+}
+@media (max-width: 640px) {
+  .event .container {
+    display: block;
+  }
+  .event__image {
+    width: 100%;
+  }
+  .event__details {
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  color: #000;
+  list-style: none;
+}
+
+.container {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (max-width: 640px) {
+  .container {
+    max-width: 80%;
+  }
+}
+@media (max-width: 1024px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
+/*# sourceMappingURL=/main.css.map */
